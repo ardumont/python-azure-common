@@ -1,0 +1,47 @@
+Source: python-azure-common
+Section: python
+Priority: optional
+Maintainer: Antoine R. Dumont <antoine.romain.dumont@gmail.com>
+Build-Depends: debhelper (>= 9),
+               python-all,
+               python-setuptools,
+               python-msrest,
+               python-msrestazure,
+               python-azure-nspkg,
+               python3-all,
+               python3-setuptools,
+               python3-msrest,
+               python3-msrestazure,
+               python3-azure-nspkg
+Standards-Version: 3.9.6
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.0
+Homepage: https://github.com/Azure/azure-storage-sdk
+
+Package: python-azure-common
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-azure-nspkg
+Description: Microsoft Azure Client Library for Python (Common)
+ This project provides a client library in Python that makes it easy
+ to consume Microsoft Azure Storage services.
+ For documentation please see the Microsoft Azure Python Developer
+ Center and our GitHub.io Reference Page.
+ This free software is provided under the Apache License Version 2.0,
+ January 2004 - http://www.apache.org/licenses/
+ This is the Python 2 version of the package.
+
+Package: python3-azure-common
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-azure-nspkg
+Description: Microsoft Azure Client Library for Python (Common)
+ This project provides a client library in Python that makes it easy
+ to consume Microsoft Azure Storage services.
+ For documentation please see the Microsoft Azure Python Developer
+ Center and our GitHub.io Reference Page.
+ This free software is provided under the Apache License Version 2.0,
+ January 2004 - http://www.apache.org/licenses/
+ This is the Python 3 version of the package.
